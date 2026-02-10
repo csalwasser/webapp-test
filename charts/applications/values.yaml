@@ -1,6 +1,6 @@
 # Global settings for all ArgoCD Applications
 global:
-  repoURL: https://github.com/hjukic/cni-example
+  repoURL: https://github.com/csalwasser/webapp-test
   targetRevision: HEAD
 
 # Application configurations
@@ -8,4 +8,4 @@ applications:
   webapp-color:
     enabled: true
     project: default
-    namespace: webapp-color
+    namespace: webapp-test

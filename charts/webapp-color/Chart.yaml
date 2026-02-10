@@ -1,5 +1,5 @@
 apiVersion: v2
-name: webapp-color
+name: webapp-test
 description: A simple webapp that displays different colors
 version: 1.0.0
 appVersion: "1.0"
