@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-color
+  name: webapp-test
   labels:
-    app: webapp-color
+    app: webapp-test
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -15,4 +15,4 @@ spec:
       nodePort: {{ .Values.service.nodePort }}
       {{- end }}
   selector:
-    app: webapp-color
+    app: webapp-test
