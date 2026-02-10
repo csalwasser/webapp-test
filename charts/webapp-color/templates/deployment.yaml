@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp-color
+  name: webapp-test
   labels:
-    app: webapp-color
+    app: webapp-test
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: webapp-color
+      app: webapp-test
   template:
     metadata:
       labels:
-        app: webapp-color
+        app: webapp-test
     spec:
       containers:
-        - name: webapp-color
+        - name: webapp-test
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
